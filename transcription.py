@@ -3,7 +3,7 @@ import logging
 from openai import OpenAI
 from typing import Optional
 
-from .config import settings
+from config import settings
 
 logger = logging.getLogger(__name__)
 client = OpenAI(api_key=settings.OPENAI_API_KEY)

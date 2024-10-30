@@ -4,10 +4,10 @@ from threading import Thread
 import json
 from typing import List, Dict, Any
 
-from .webhook_server import run_webhook_server
-from .call_manager import CallManager
-from .transcription import transcribe_recording
-from .analysis import analyze_transcript
+from webhook_server import run_webhook_server, call_statuses, status_lock
+from call_manager import CallManager
+from transcription import transcribe_recording
+from analysis import analyze_transcript
 
 logging.basicConfig(
     level=logging.INFO,

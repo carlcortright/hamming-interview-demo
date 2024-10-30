@@ -5,7 +5,7 @@ from pathlib import Path
 from threading import Lock
 from typing import Optional, Dict, Any
 
-from .config import settings
+from config import settings
 
 logger = logging.getLogger(__name__)
 

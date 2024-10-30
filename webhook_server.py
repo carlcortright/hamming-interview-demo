@@ -27,5 +27,6 @@ def webhook():
     logger.info(f"Webhook received - Call ID: {call_id}, Status: {status}, Recording Available: {recording_available}")
     return jsonify({'status': 'received'}), 200
 
-if __name__ == "__main__":
+def run_webhook_server():
+    """Run the Flask webhook server."""
     app.run(host='0.0.0.0', port=5000)
